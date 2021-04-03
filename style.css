@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.card {
+    margin: auto;
+    width: 650px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    border: 30px solid;
+    border-image: url(images/border.png) 30 round;
+    font-family: 'Pangolin', cursive;
+}
+
+img {
+    width: 600px;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 300%;
+    width: auto;
+    margin: auto;
+    margin-top: 30px;
+    font-family: 'Pangolin', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover,
+.class1:hover {
+    background-color: navajowhite;
+    color: black;
+}
+
+#photos {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+hr {
+    height: 4px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 1000px;
+    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 1), white);
+}
+
+.class1 {
+    margin: auto;
+    float: left;
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 1%;
+    border-color: black;
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Pangolin', cursive;
+}
+
+
+.picture1,
+    {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 212.5%;
+    text-align: left;
+    font-family: cursive;
+}
+
+a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+#div1 {
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+h6 {
+    margin: auto;
+}
+
+.background-photos {
+    width: 100%;
+    opacity: 25%;
+    margin: 0;
+}
+
+#absolute {
+    left: 5%;
+    top: 80%;
+}
+
+#absolute1 {
+    left: 5%;
+    top: 170%;
+}
+
+#absolute2 {
+    left: 5%;
+    top: 260%;
+}
+
+#absolute,
+#absolute1,
+#absolute2 {
+    position: absolute;
+    color: dimgray;
+    font-size: 450%;
+    text-decoration: underline;
+    font-family: 'Pangolin', cursive;
+    text-align: left;
+}
+
+#button {
+    left: 8%;
+    top: 110%;
+}
+
+#button1 {
+    left: 8%;
+    top: 200%;
+}
+
+#button2 {
+    left: 8%;
+    top: 200%;
+}
+
+#button,
+#button1,
+#button2 {
+    border: 5px solid black;
+    position: absolute;
+    color: dimgray;
+    font-size: 450%;
+    text-decoration: none;
+    font-family: 'Pangolin', cursive;
+}
+
+#button:hover, #button1:hover, #button2:hover {
+    background-color: lightgrey;
+    text-decoration: underline;
+}
+
+main {
+    border-bottom: solid 5px black;
+}

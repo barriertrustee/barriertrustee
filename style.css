@@ -87,6 +87,7 @@ hr {
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Pangolin', cursive;
+    height: 400px;
 }
 
 
@@ -127,23 +128,21 @@ h6 {
 }
 
 #absolute {
-    left: 5%;
     top: 80%;
 }
 
 #absolute1 {
-    left: 5%;
     top: 170%;
 }
 
 #absolute2 {
-    left: 5%;
     top: 260%;
 }
 
 #absolute,
 #absolute1,
 #absolute2 {
+    left: 5%;
     position: absolute;
     color: dimgray;
     font-size: 450%;
@@ -153,23 +152,22 @@ h6 {
 }
 
 #button {
-    left: 8%;
-    top: 110%;
+    top: 120%;
 }
 
 #button1 {
-    left: 8%;
-    top: 200%;
+    ;
+    top: 210%;
 }
 
 #button2 {
-    left: 8%;
-    top: 200%;
+    top: 300%;
 }
 
 #button,
 #button1,
 #button2 {
+    left: 8%;
     border: 5px solid black;
     position: absolute;
     color: dimgray;
@@ -178,7 +176,9 @@ h6 {
     font-family: 'Pangolin', cursive;
 }
 
-#button:hover, #button1:hover, #button2:hover {
+#button:hover,
+#button1:hover,
+#button2:hover {
     background-color: lightgrey;
     text-decoration: underline;
 }

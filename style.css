@@ -186,3 +186,15 @@ h6 {
 main {
     border-bottom: solid 5px black;
 }
+
+iframe {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.space {
+    width:80%;
+    text-align: left;
+    font-size:150%;
+    margin-left:10%
+}

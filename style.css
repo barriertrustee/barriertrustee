@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    color: darkslategrey;
+}
+
+.card,
+.card1 {
+    margin: auto;
+    width: 650px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    border: 30px solid;
+    border-image: url(images/border.png) 30 round;
+    font-family: 'Pangolin', cursive;
+}
+
+img {
+    width: 600px;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 300%;
+    width: auto;
+    margin: auto;
+    margin-top: 30px;
+    font-family: 'Pangolin', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 23.5px;
+    font-family: serif;
+}
+
+li a:hover,
+.class1:hover {
+    background-color: navajowhite;
+    color: black;
+}
+
+#photos {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+
+hr {
+    height: 4px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 1000px;
+    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 1), white);
+}
+
+.class1 {
+    margin: auto;
+    float: left;
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 1%;
+    border-color: black;
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Pangolin', cursive;
+    height: 400px;
+}
+
+
+.picture1,
+    {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 212.5%;
+    text-align: left;
+    font-family: cursive;
+}
+
+a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+#div1 {
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+h6 {
+    margin: auto;
+}
+
+.background-photos {
+    width: 100%;
+    opacity: 60%;
+    margin: 0;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.absolute {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    color: darkslategray;
+    font-size: 5vw;
+    text-decoration: underline;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border: 5px solid black;
+    position: absolute;
+    color: dimgray;
+    font-size: 5vw;
+    text-decoration: none;
+    font-family: 'Pangolin', cursive;
+    margin-top: 25%;
+}
+
+#button:hover,
+#button1:hover,
+#button2:hover {
+    background-color: lightgrey;
+    text-decoration: underline;
+}
+
+.border {
+    border-bottom: solid 5px black;
+}
+
+iframe {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.space {
+    width: 80%;
+    text-align: left;
+    font-size: 150%;
+    margin-left: 10%;
+    margin-top: 0;
+    color: #080029;
+}
+
+.slideshow-container {
+    width: 850px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    ;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border: 5px solid black;
+    background-color: black;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 20px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 20px;
+}
+
+.card1 {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.prev:hover,
+.next:hover {
+    background-color: gray;
+    text-decoration: underline;
+    border: 5px solid grey;
+}

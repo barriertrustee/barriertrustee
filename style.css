@@ -89,8 +89,9 @@ hr {
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Pangolin', cursive;
-    height: 400px;
+    height: 50%;
     background-color: #d4d9ff;
+    font-size:1.1vw;
 }
 
 

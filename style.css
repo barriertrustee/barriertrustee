@@ -162,6 +162,7 @@ h6 {
     font-family: 'Pangolin', cursive;
     margin-top: 25%;
     -webkit-apperance: none;
+    border-radius: 0;
     
 }
 

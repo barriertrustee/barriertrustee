@@ -160,6 +160,8 @@ h6 {
     text-decoration: none;
     font-family: 'Pangolin', cursive;
     margin-top: 25%;
+    -webkit-apperance: none;
+    
 }
 
 .button:hover {

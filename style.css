@@ -92,6 +92,8 @@ hr {
     height: 50%;
     background-color: #d4d9ff;
     font-size:1.1vw;
+    -webkit-apperance: none;
+    border-radius: 0;
 }
 
 

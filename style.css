@@ -7,8 +7,7 @@ body {
     color: darkslategrey;
 }
 
-.card,
-.card1 {
+.card{
     margin: auto;
     width: 650px;
     padding-top: 1px;

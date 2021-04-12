@@ -1,5 +1,10 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
+
+
+            
+/* global */
 body {
     box-sizing: border-box;
     margin: 0;
@@ -7,30 +12,59 @@ body {
     color: darkslategrey;
 }
 
-.card{
-    margin: auto;
-    width: 650px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin-top: 20px;
-    border: 30px solid;
-    border-image: url(images/border.png) 30 round;
-    font-family: 'Pangolin', cursive;
-}
-
-img {
-    width: 600px;
-    margin-top: 5%;
-}
-
 h1 {
-    font-size: 300%;
+    font-size: 6vw;
     width: auto;
     margin: auto;
     margin-top: 30px;
     font-family: 'Pangolin', cursive;
 }
 
+h2 {
+    font-size: 237.5%;
+    text-align: left;
+    font-family: cursive;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    width: 50%;
+    margin-right: 0;
+    display: inline-block;
+    float: left;
+}
+
+hr {
+    height: 4px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    width: 1000px;
+    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 1), white);
+}
+
+a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+h6 {
+    margin: auto;
+}
+
+
+
+
+/* heading images */
+#photos {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 0px;
+}
+
+
+
+
+/* navigation */
 ul {
     list-style-type: none;
     margin: 0;
@@ -54,85 +88,17 @@ li a {
     font-family: serif;
 }
 
-li a:hover,
-.class1:hover {
+li a:hover {
     background-color: navajowhite;
     color: black;
 }
 
-#photos {
-    width: 100%;
-    margin: auto;
-    padding-bottom: 0px;
-}
 
 
-hr {
-    height: 4px;
-    border-width: 0;
-    color: gray;
-    background-color: gray;
-    width: 1000px;
-    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 1), white);
-}
 
-.class1 {
-    margin: auto;
-    float: left;
-    margin-left: 5%;
-    border-style: solid;
-    border-width: 1%;
-    border-color: black;
-    width: 25%;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Pangolin', cursive;
-    height: 50%;
-    background-color: #d4d9ff;
-    font-size:1.1vw;
-    -webkit-apperance: none;
-    border-radius: 0;
-}
-
-
-.picture1,
-    {
-    margin: auto;
-    width: 90%;
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 212.5%;
-    text-align: left;
-    font-family: cursive;
-}
-
-a {
-    color: darkslategrey;
-    text-decoration: none;
-}
-
-#div1 {
-    margin: auto;
-    width: 50%;
-    margin-top: 20px;
-    font-size: 1.25rem;
-    text-align: left;
-}
-
-h6 {
-    margin: auto;
-}
-
-.background-photos {
-    width: 100%;
-    opacity: 60%;
-    margin: 0;
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
+/* frontpage */
+.border {
+    border-bottom: solid 5px black;
 }
 
 .absolute {
@@ -163,8 +129,8 @@ h6 {
     text-decoration: none;
     font-family: 'Pangolin', cursive;
     margin-top: 25%;
-
-    
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .button:hover {
@@ -172,8 +138,71 @@ h6 {
     text-decoration: underline;
 }
 
-.border {
-    border-bottom: solid 5px black;
+.background-photos {
+    width: 100%;
+    opacity: 60%;
+    margin: 0;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+
+
+
+/* frontnews */
+
+.slideshow-container {
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+.class1 {
+    margin: auto;
+    border-style: solid;
+    border-width: 1%;
+    border-color: black;
+    width: 80%;
+    font-family: 'Pangolin', cursive;
+    background-color: #d4d9ff;
+    font-size: 1.23vw;
+    height: auto;
+    display: none;
+}
+
+.class1:hover {
+    background-color: bisque;
+}
+
+
+.news {
+    width: 45%;
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+.news-text {
+    display: inline-block;
+    margin-left: 2.5%;
+    width: 40%;
+    text-align: left;
+    margin-right: 2.5%;
+}
+
+
+
+
+
+/* videos */
+#slideshow-container1 {
+    width: 850px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 100px;
 }
 
 iframe {
@@ -190,48 +219,30 @@ iframe {
     color: #080029;
 }
 
-.slideshow-container {
-    width: 850px;
-    position: relative;
-    margin: auto;
-    margin-bottom: 100px;
-}
 
-.prev,
-.next {
+
+
+/* dot */
+.dot {
     cursor: pointer;
-    position: absolute;
-    top: 45%;
-    width: auto;
-    margin-top: -22px;
-    ;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    border: 5px solid black;
-    background-color: black;
-    transition: 0.3s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    height: 15px;
+    width: 15px;
+    margin: 15px 2px 100px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-    margin-right: 20px;
+.active,
+.dot:hover {
+    background-color: dimgrey;
 }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    margin-left: 20px;
-}
 
-.card1 {
-    display: none;
-}
 
+
+/* animation */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3s;
@@ -259,9 +270,86 @@ iframe {
     }
 }
 
+
+
+
+/* transition button */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: 1%;
+    height: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    border: 5px solid black;
+    background-color: black;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-align: center;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 20px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 20px;
+}
+
 .prev:hover,
 .next:hover {
     background-color: gray;
     text-decoration: underline;
     border: 5px solid grey;
+}
+
+
+
+
+/* photos */
+.card {
+    margin: auto;
+    width: 650px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+    border: 30px solid;
+    border-image: url(images/border.png) 30 round;
+    font-family: 'Pangolin', cursive;
+}
+
+.photos {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+/*  newspage */
+.div1 {
+    margin: auto;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+
+.header2 {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
 }

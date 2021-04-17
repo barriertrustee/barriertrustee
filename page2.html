@@ -9,41 +9,42 @@
 </head>
 
 <body>
-    <img src="images/heading1.jpg" alt="Background" id="photos">
+    <img src="images/heading1.jpg" alt="Background" class="photos1">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="page1.html">News</a></li>
         <li><a href="page2.html">Cute videos</a></li>
         <li><a href="page3.html">Cute Images</a></li>
+        <li class="right"><a href="page4.html">About Us</a></li>
     </ul>
-    <h1>Kittens' cutest video</h1>
+    <h1 style="margin-top: 20px;">Kittens' cutest video</h1>
     <hr style="width: 800px">
-    <div id="slideshow-container1">
-        <div class="card fade">
+    <div class="slideshow-container1">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/eX2qFMC8cFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsum architecto quis accusantium, fuga ducimus quasi, hic eius. Accusamus, ut.</p>
         </div>
-        <div class="card fade">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/SkgTxQm9DWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic totam ex inventore autem eligendi mollitia, repellat possimus tenetur eaque? Eveniet?</p>
+            <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic totam ex inventore autem eligzendi mollitia, repellat possimus tenetur eaque? Eveniet?</p>
         </div>
-        <div class="card fade">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/DXUAyRRkI6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet molestiae esse mollitia a officiis dolorum, quibusdam ipsum, possimus magni.</p>
         </div>
-        <div class="card fade">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5dsGWM5XGdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est vitae delectus autem impedit mollitia perferendis incidunt perspiciatis sit nisi,</p>
         </div>
-        <div class="card fade">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/aD-fFyGvDW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eum itaque obcaecati quia eveniet hic magnam consequatur dolore earum laboriosam.</p>
         </div>
-        <div class="card fade">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/J7UwSVsiwzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veniam consequuntur qui quidem quis. Libero, itaque consequuntur omnis ducimus hic!</p>
         </div>
-        <div class="card fade">
+        <div class="card1 fade">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/un8a4lSCdmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="space">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sint veniam ad voluptas voluptatem iusto labore cum autem, perspiciatis neque.</p>
         </div>
@@ -64,7 +65,7 @@
 
         function showSlides(n) {
             var i;
-            var slides = document.getElementsByClassName("card");
+            var slides = document.getElementsByClassName("card1");
             if (n > slides.length) {
                 slideIndex = 1
             }
@@ -74,8 +75,9 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "inline-block";
         }
+
     </script>
 </body>
 

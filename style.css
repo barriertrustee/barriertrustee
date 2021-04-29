@@ -1,11 +1,15 @@
-/* font */
+/* SECTION Global */
+
+/* ANCHOR font */
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
 
 
 
 
-/* global */
+
+
+/* ANCHOR global */
 body {
     box-sizing: border-box;
     color: darkslategrey;
@@ -52,7 +56,9 @@ h6 {
 
 
 
-/* heading images */
+
+
+/* ANCHOR heading images */
 .photos1 {
     margin: auto;
     padding-bottom: 0;
@@ -62,8 +68,12 @@ h6 {
 
 
 
-/* navigation */
+
+
+
+/* ANCHOR navigation */
 ul {
+    display: flex;
     background-color: #333;
     list-style-type: none;
     margin: 0;
@@ -78,9 +88,10 @@ li {
 li a {
     color: white;
     display: block;
-    font-family: serif;
-    font-size: 1.7vw;
-    padding: 2vh 2vw;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2.1vw;
+    padding: 1.5vw 3vw;
     text-align: center;
     text-decoration: none;
 }
@@ -88,18 +99,20 @@ li a {
 li a:hover {
     background-color: navajowhite;
     color: black;
+    text-decoration: underline;
 }
-
 
 .right {
-    float: right;
-    text-align: right;
+margin-left: auto;
 }
 
 
 
 
-/* footer */
+
+
+
+/* ANCHOR  footer */
 footer {
     background-color: grey;
     bottom: 0;
@@ -153,7 +166,6 @@ footer {
     color: white;
 }
 
-
 .not-border {
     border-right: 0px;
 }
@@ -163,10 +175,17 @@ footer {
     text-decoration: underline;
 }
 
+/* !SECTION */
 
 
 
-/* frontpage */
+
+
+
+
+/* SECTION Main pages */
+
+ /* ANCHOR frontpage */
 .border {
     border-bottom: solid 5px black;
 }
@@ -190,7 +209,7 @@ footer {
     -moz-appearance: none;
     -webkit-appearance: none;
     border: 5px solid black;
-    border-radius: 0;
+    border-radius: 1vw;
     color: dimgray;
     font-family: 'Pangolin', cursive;
     font-size: 5vw;
@@ -209,7 +228,6 @@ footer {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
-
 
 .button:hover,
 .button:focus,
@@ -236,7 +254,10 @@ footer {
 
 
 
-/* frontnews */
+
+
+
+ /* ANCHOR  frontnews */
 .slider {
     display: flex;
     margin-left: auto;
@@ -249,7 +270,12 @@ footer {
     scroll-snap-type: mandatory;
     scroll-snap-type: x mandatory;
     text-align: center;
-    width: 52vw;
+    width: 53%;
+}
+
+.class1>h2 {
+    text-align: center;
+    width: 90%;
 }
 
 .class1 {
@@ -269,7 +295,6 @@ footer {
 .news {
     border: 1px solid black;
     border-radius: 2vw;
-    display: inline-block;
     float: left;
     margin-bottom: 3%;
     margin-left: 3%;
@@ -278,14 +303,17 @@ footer {
 }
 
 .news-text {
-    display: inline-block;
+    float: right;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 3%;
     text-align: left;
-    width: 40%;
+    width: 45%;
 }
 
 .button1 {
+    text-align: center;
     -moz-appearance: none;
     -webkit-appearance: none;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -298,14 +326,14 @@ footer {
     color: dimgray;
     display: inline-block;
     font-family: 'Pangolin', cursive;
-    font-size: 2.9vw;
+    font-size: 2.8vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
     text-decoration: none;
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.3s;
     transition-property: box-shadow, transform;
-    vertical-align: middle;
 }
 
 .button1:hover {
@@ -331,14 +359,19 @@ footer {
 }
 
 .attribute {
+    display: flex;
+    justify-content: space-around;
     margin: auto;
-    width: 52vw;
+    width: 53%;
 }
 
 
 
 
-/* dots */
+
+
+
+ /* ANCHOR  dots */
 .link {
     background-color: black;
     border: 0.3vw solid black;
@@ -347,10 +380,9 @@ footer {
     display: inline-block;
     font-size: 1.8vw;
     font-weight: 900;
-    float: left;
     height: 2vw;
     line-height: 2vw;
-    margin: 1% 3.74%;
+    margin: 1.5%;
     text-align: center;
     width: 2vw;
 
@@ -364,7 +396,10 @@ footer {
 
 
 
-/* videos */
+
+
+
+ /* ANCHOR videos */
 .slideshow-container1 {
     margin: auto;
     margin-bottom: 100px;
@@ -402,7 +437,10 @@ iframe {
 
 
 
-/* transition button */
+
+
+
+ /* ANCHOR transition button */
 .prev,
 .next {
     -moz-user-select: none;
@@ -441,7 +479,10 @@ iframe {
 
 
 
-/* photos */
+
+
+
+ /* ANCHOR photos */
 .card {
     border: 30px solid;
     border-image: url(images/border.png) 30 round;
@@ -460,11 +501,18 @@ iframe {
     width: 90%;
 }
 
+/* !SECTION */
 
 
 
 
-/*  newspage */
+
+
+
+
+/* SECTION Newspage */
+
+ /* ANCHOR  newspage */
 .div1 {
     display: inline-block;
     font-size: 1.25rem;
@@ -481,3 +529,5 @@ iframe {
     margin-left: 0;
     width: 100%;
 }
+
+/* !SECTION */

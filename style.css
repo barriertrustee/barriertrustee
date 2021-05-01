@@ -40,7 +40,7 @@ hr {
     background-image: linear-gradient(to right, white, rgba(0, 0, 0, 1), white);
     border-width: 0;
     color: gray;
-    height: 0.6vh;
+    height: 0.6vw;
 }
 
 a {
@@ -188,6 +188,7 @@ footer {
  /* ANCHOR frontpage */
 .border {
     border-bottom: solid 5px black;
+    width:100%;
 }
 
 .absolute {
@@ -208,7 +209,7 @@ footer {
 .button {
     -moz-appearance: none;
     -webkit-appearance: none;
-    border: 5px solid black;
+    border: 0.5vw solid black;
     border-radius: 1vw;
     color: dimgray;
     font-family: 'Pangolin', cursive;
@@ -343,7 +344,7 @@ footer {
 }
 
 .slider::-webkit-scrollbar {
-    height: 3vh;
+    height: 3vw;
 }
 
 .slider::-webkit-scrollbar-track {
@@ -508,6 +509,7 @@ iframe {
 .sub-container {
     position: relative;
     margin-top: 20px;
+    border: 2px solid black;
 }
 
 .sub-container > img{
@@ -537,7 +539,7 @@ iframe {
     position: absolute;
     line-height: 1.1;
     width:100%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

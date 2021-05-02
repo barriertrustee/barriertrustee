@@ -561,34 +561,7 @@ iframe {
 
 
 
-/* ANCHOR About us*/
-.our-work {
-    display: inline-block;
-    width:45%;
-    text-align: left;
-    margin-right: auto;
-    margin-left: 5%;
-}
-
-.our-work > h1{
-    text-decoration: underline;
-}
-
-.flex > img{
-    width: 35%;
-    margin-right: auto;
-}
-/* !SECTION */
-
-
-
-
-
-
-
-
 /* SECTION Newspage */
-
 /* ANCHOR  newspage */
 .div1 {
     display: inline-block;

@@ -189,14 +189,12 @@ footer {
 
 /* ANCHOR frontpage */
 .container1 {
-    display: flex;
-    flex-flow: column;
+    position: relative;
 }
 
 .border {
     border-bottom: solid 5px black;
     width: 100%;
-    flex: 1;
     position: relative;
 }
 
@@ -283,7 +281,7 @@ footer {
     width: 53%;
 }
 
-.class1 > h2 {
+.class1>h2 {
     text-align: center;
     width: 90%;
 }
@@ -505,7 +503,7 @@ iframe {
     margin-bottom: 50px;
 }
 
-.container > div {
+.container>div {
     display: inline-block;
     flex: 1;
     min-width: 300px;
@@ -521,7 +519,7 @@ iframe {
     border: 2px solid black;
 }
 
-.sub-container > img {
+.sub-container>img {
     width: 100%;
     display: block;
 }
@@ -576,11 +574,12 @@ iframe {
     justify-content: space-between;
 }
 
-.sub-container2, .sub-container4 {
+.sub-container2,
+.sub-container4 {
     flex-direction: row-reverse;
 }
 
-.sub-container4{
+.sub-container4 {
     margin-bottom: 5%;
 }
 
@@ -645,6 +644,7 @@ iframe {
 .img1>img {
     width: 100%;
 }
+
 /* !SECTION * /
 
 

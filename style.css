@@ -280,7 +280,7 @@ footer {
     width: 53%;
 }
 
-.class1>h2 {
+.class1 > h2 {
     text-align: center;
     width: 90%;
 }
@@ -502,7 +502,7 @@ iframe {
     margin-bottom: 50px;
 }
 
-.container>div {
+.container > div {
     display: inline-block;
     flex: 1;
     min-width: 300px;
@@ -518,7 +518,7 @@ iframe {
     border: 2px solid black;
 }
 
-.sub-container>img {
+.sub-container > img {
     width: 100%;
 }
 
@@ -555,6 +555,93 @@ iframe {
     text-shadow: 1px 1px 1px #000;
 }
 
+
+
+
+
+
+/* ANCHOR About us*/
+.sub-container1,
+.sub-container2,
+.sub-container3,
+.sub-container4 {
+    padding-top: 5%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-container2, .sub-container4 {
+    flex-direction: row-reverse;
+}
+
+.sub-container4{
+    margin-bottom: 5%;
+}
+
+.our-work {
+    width: 40%;
+    background-color: gainsboro;
+    display: flex;
+    text-align: left;
+    font-size: 2vw;
+    flex-direction: column;
+}
+
+.our-work>h2 {
+    text-decoration: underline;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    text-align: center;
+}
+
+.our-work>p {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.sub-container1>.our-work {
+    margin-right: 3%;
+}
+
+.sub-container2>.our-work {
+    margin-left: 3%;
+}
+
+.sub-container3>.our-work {
+    margin-right: 3%;
+}
+
+.sub-container4>.our-work {
+    margin-left: 3%;
+}
+
+.img1 {
+    width: 50%;
+}
+
+.sub-container1>.img1 {
+    margin-left: 3%;
+}
+
+.sub-container2>.img1 {
+    margin-right: 3%;
+}
+
+.sub-container3>.img1 {
+    margin-left: 3%;
+}
+
+.sub-container4>.img1 {
+    margin-right: 3%;
+}
+
+.img1>img {
+    width: 100%;
+}
+/* !SECTION * /
 
 
 

@@ -12,7 +12,7 @@
 /* ANCHOR global */
 body {
     box-sizing: border-box;
-    color: rgb(0, 32, 0);
+    color: rgb(2, 0, 32);
     margin: 0;
     text-align: center;
 }
@@ -63,6 +63,7 @@ h6 {
     margin: auto;
     padding-bottom: 0;
     width: 100%;
+    display: block;
 }
 
 
@@ -94,6 +95,7 @@ li a {
     padding: 1.5vw 3vw;
     text-align: center;
     text-decoration: none;
+    transition: 0.47s ease;
 }
 
 li a:hover {
@@ -521,6 +523,7 @@ iframe {
 
 .sub-container > img {
     width: 100%;
+    display: block;
 }
 
 .overlay {

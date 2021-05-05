@@ -1,7 +1,7 @@
 /* SECTION Global */
 
 /* ANCHOR font */
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
 
 
 
@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    font-family: cursive;
+    font-family: 'B612', sans-serif;
     font-size: 4vw;
     margin: auto;
     margin-top: 0;
@@ -27,9 +27,8 @@ h1 {
 
 h2 {
     display: inline-block;
-    font-family: cursive;
-    font-size: 237.5%;
-    margin: 1% 0 0 5%;
+    font-family: 'B612', sans-serif;
+    font-size: 3vw;
     text-align: left;
     width: 50%;
 }
@@ -78,12 +77,13 @@ ul {
     background-color: #333;
     list-style-type: none;
     margin: 0;
-    overflow: hidden;
     padding: 0;
+    justify-content: space-around;
 }
 
 li {
     float: left;
+    display: block;
 }
 
 li a {
@@ -91,23 +91,48 @@ li a {
     display: block;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-    font-size: 2.1vw;
-    padding: 1.5vw 3vw;
+    font-size: 2vw;
+    padding: 0.4vw 0;
+    margin: 1.1vw 0;
     text-align: center;
     text-decoration: none;
-    transition: 0.47s ease;
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #e5a2ff;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+li a:hover:before,
+li a:focus:before,
+li a:active:before {
+    left: 0;
+    right: 0;
 }
 
 li a:hover {
-    background-color: navajowhite;
-    color: black;
-    text-decoration: underline;
+    color: #e5a2ff;
 }
-
-.right {
-    margin-left: auto;
-}
-
 
 
 
@@ -119,18 +144,18 @@ footer {
     background-color: grey;
     bottom: 0;
     color: white;
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-align: center;
     font-family: cursive;
     width: 100%;
 }
 
 .header-footer {
-    margin-left: 0;
-    margin-top: 0;
-    padding-top: 1px;
+    margin: auto;
     padding-bottom: 1px;
     text-align: center;
+    font-family: cursive;
+    font-size: 5vw;
 }
 
 .img {
@@ -201,7 +226,7 @@ footer {
 .absolute {
     color: darkslategray;
     display: inline-block;
-    font-family: 'Pangolin', cursive;
+    font-family: 'B612', sans-serif;
     font-size: 5vw;
     left: 0;
     margin-left: auto;
@@ -219,7 +244,7 @@ footer {
     border: 0.5vw solid black;
     border-radius: 1vw;
     color: dimgray;
-    font-family: 'Pangolin', cursive;
+    font-family: 'B612', sans-serif;
     font-size: 5vw;
     left: 0;
     margin-left: auto;
@@ -270,11 +295,11 @@ footer {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 3%;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    scroll-snap-points-x: repeat(52vw);
+    scroll-snap-points-x: repeat(53%);
     scroll-snap-type: mandatory;
     scroll-snap-type: x mandatory;
     text-align: center;
@@ -291,7 +316,7 @@ footer {
     border: 0.3vw solid black;
     display: inline-block;
     flex-shrink: 0;
-    font-family: 'Pangolin', cursive;
+    font-family: 'B612', sans-serif;
     font-size: 1.23vw;
     margin-left: auto;
     margin-right: auto;
@@ -333,7 +358,7 @@ footer {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     color: dimgray;
     display: inline-block;
-    font-family: 'Pangolin', cursive;
+    font-family: 'B612', sans-serif;
     font-size: 2.8vw;
     margin-left: auto;
     margin-right: auto;
@@ -434,7 +459,7 @@ iframe {
     border: 30px solid;
     border-image: url(images/border.png) 30 round;
     display: none;
-    font-family: 'Pangolin', cursive;
+    font-family: 'B612', sans-serif;
     margin: auto;
     margin-top: 30px;
     padding-bottom: 1px;
@@ -492,30 +517,30 @@ iframe {
 
 /* ANCHOR photos */
 .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
     align-items: space-around;
     background-color: #dad6d6;
     border: 1px solid black;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .container>div {
     display: inline-block;
     flex: 1;
-    min-width: 300px;
-    margin: 10px;
+    min-width: 200px;
+    margin: 2% 0;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .sub-container {
     position: relative;
-    margin-top: 20px;
+    margin-top: 4%;
     border: 2px solid black;
 }
 
@@ -543,7 +568,7 @@ iframe {
 
 .text {
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 2vw;
     position: absolute;
     line-height: 1.1;
     width: 100%;
@@ -656,10 +681,10 @@ iframe {
 /* ANCHOR  newspage */
 .div1 {
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.75vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 2%;
     text-align: left;
     width: 60%;
 }
